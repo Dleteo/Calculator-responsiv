@@ -1,0 +1,151 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.calculator {
+  background: #1a1a2e;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.6),
+    inset 0 -4px 10px rgba(255, 255, 255, 0.1);
+  width: 320px;
+}
+
+#display {
+  width: 100%;
+  font-size: 2.5rem;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 15px;
+  background: #16213e;
+  color: #e0e0e0;
+  text-align: right;
+  box-shadow: inset 2px 2px 5px rgba(255,255,255,0.1),
+              inset -2px -2px 5px rgba(0,0,0,0.7);
+  user-select: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+button {
+  background: #0f3460;
+  border: none;
+  border-radius: 12px;
+  padding: 18px 0;
+  font-size: 1.3rem;
+  color: #e0e0e0;
+  cursor: pointer;
+  box-shadow: 0 4px #0b254c;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  user-select: none;
+}
+
+button:hover {
+  background: #162a6f;
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+/* Botón igual más destacado */
+button:nth-child(15) {
+  background: #ff5722;
+  box-shadow: 0 4px #c14012;
+  color: #fff;
+  font-weight: bold;
+}
+
+button:nth-child(15):hover {
+  background: #e64a19;
+}
+
+button:nth-child(15):active {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+/* Botones científicos con color diferente */
+button:nth-child(17),
+button:nth-child(18),
+button:nth-child(19),
+button:nth-child(20),
+button:nth-child(21),
+button:nth-child(22) {
+  background: #1f4068;
+  box-shadow: 0 4px #133056;
+  font-weight: 600;
+}
+
+button:nth-child(17):hover,
+button:nth-child(18):hover,
+button:nth-child(19):hover,
+button:nth-child(20):hover,
+button:nth-child(21):hover,
+button:nth-child(22):hover {
+  background: #162f53;
+}
+
+/* Botón C (borrar) rojo */
+button:nth-child(22) {
+  background: #b00020;
+  box-shadow: 0 4px #800016;
+  font-weight: 700;
+}
+
+button:nth-child(22):hover {
+  background: #8b0018;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 360px) {
+  .calculator {
+    width: 95vw;
+    padding: 20px;
+  }
+
+  #display {
+    font-size: 2rem;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 14px 0;
+    font-size: 1.1rem;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+  color: #aaa;
+  background-color: #1a1a2e;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
