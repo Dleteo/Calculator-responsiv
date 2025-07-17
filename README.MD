@@ -1,50 +1,33 @@
-Calculadora Científica
-Calculadora científica web creada con HTML, CSS y TypeScript. Soporta operaciones básicas y funciones científicas como seno, coseno, tangente, potencias y raíz cuadrada, con cálculo en grados para funciones trigonométricas.
+Scientific Calculator Web-based scientific calculator built with HTML, CSS, and TypeScript. Supports basic operations and scientific functions such as sine, cosine, tangent, powers, and square root, with calculations in degrees for trigonometric functions.
 
-Características
-Operaciones básicas: suma, resta, multiplicación, división.
+Features: Basic operations: addition, subtraction, multiplication, division.
 
-Funciones científicas: sin(), cos(), tan(), potencia (^), raíz cuadrada (√).
+Scientific functions: sin(), cos(), tan(), power (^), square root (√).
 
-Interfaz moderna y responsiva con diseño oscuro.
+Modern, responsive interface with dark design.
 
-Manejo seguro de expresiones matemáticas sin usar eval.
+Safe handling of mathematical expressions without using eval.
 
-Código modular y escrito en TypeScript para mayor seguridad y escalabilidad.
+Modular code written in TypeScript for security and scalability.
 
-Fácil de usar con botones claros y bien organizados.
+Easy to use with clear, well-organized buttons.
 
-Vista previa
+Preview
 
-(Agrega aquí una captura de pantalla de tu calculadora)
+(Add a screenshot of your calculator here)
 
-Tecnologías
-HTML5 para la estructura.
+HTML5 technologies for structure.
 
-CSS3 para el diseño responsivo y moderno.
+CSS3 for responsive, modern design.
 
-TypeScript para la lógica con tipado seguro.
+TypeScript for type-safe logic.
 
-JavaScript compilado desde TypeScript para ejecución en navegador.
+JavaScript compiled from TypeScript for browser execution.
 
-Instalación y uso
-Clona el repositorio:
+Installation and Use Clone the repository:
 
-bash
-Copiar
-Editar
-git clone https://github.com/tu-usuario/calculadora-cientifica.git
-cd calculadora-cientifica
-Instala TypeScript globalmente (si no lo tienes):
+bash Copy Edit git clone https://github.com/your-user/scientific-calculator.git cd scientific-calculator Install TypeScript globally (if you don't have it):
 
-bash
-Copiar
-Editar
-npm install -g typescript
-Compila el código TypeScript a JavaScript:
+bash Copy Edit npm install -g typescript Compile the TypeScript code to JavaScript:
 
-bash
-Copiar
-Editar
-tsc main.ts --target ES6 --outFile main.js
-Abre index.html en tu navegador para usar la calculadora.
+bash Copy Edit tsc main.ts --target ES6 --outFile main.js Open index.html in your browser to use the calculator.
