@@ -24,10 +24,4 @@ TypeScript for type-safe logic.
 
 JavaScript compiled from TypeScript for browser execution.
 
-Installation and Use Clone the repository:
 
-bash Copy Edit git clone https://github.com/your-user/scientific-calculator.git cd scientific-calculator Install TypeScript globally (if you don't have it):
-
-bash Copy Edit npm install -g typescript Compile the TypeScript code to JavaScript:
-
-bash Copy Edit tsc main.ts --target ES6 --outFile main.js Open index.html in your browser to use the calculator.
